@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教师登录页</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!--  引入axios  -->
+    <!--    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- api -->
+    <script src="./api/index.js"></script>
+    <style>
+        .loginPage {
+            width: 420px;
+            padding: 15px;
+            margin: 180px auto;
+        }
+
+        .loginPage h3 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .loginPage .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background: #2d3a4b">
+<div id="app">
+    <div class="loginPage">
+        <h3>学生学习状态分析系统教师端登录</h3>
+        <el-form :rules="rules" :model="loginData" ref="loginForm">
+            <el-form-item prop="tid">
+                <el-input size="small" v-model="loginData.tid"></el-input>
+            </el-form-item>
+            <el-form-item prop="password">
+                <el-input type="password" size="small" v-model="loginData.password"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-checkbox v-model="rememberMe"> 记住密码</el-checkbox>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="success" plain>教师登录</el-button>
+                <el-button onclick="location.href='StudentLogin.html'">学生登录</el-button>
+            </el-form-item>
+            <el-button @click="submitLogin" class="btn" size="small" type="primary">登录</el-button>
+        </el-form>
+    </div>
+</div>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            rememberMe: true, // 记住密码
+            loginData: { // 表单数据
+                tid: 'admin',
+                password: 123
+            },
+            rules: { // 表单验证规则
+                tid: [
+                    {required: true, message: '请填写用户名', trigger: 'blur'}
+                ],
+                password: [
+                    {required: true, message: '请填写用户密码', trigger: 'blur'}
+                ]
+            }
+        },
+        methods: {
+            submitLogin() {// 用户登录
+                this.$refs['loginForm'].validate((valid) => {
+                    if (valid) {
+                        // 向 后端 /login 发送登录请求
+                        postRequest('http://localhost:8080/teacherLogin', this.loginData).then(resp => {// 成功的回调函数 http状态码 200
+                            // resp (status http状态码,data 数据)
+                            if (resp.data.code == 200) {
+                                // 跳转页面，将登录者信息存入session
+                                window.sessionStorage.setItem("loginTeacher", JSON.stringify(resp.data.data));
+                                window.location.href = "./TeacherIndex.html";
+                            } else {
+                                this.$message.error(resp.data.msg);
+                            }
+                        })
+                    } else {
+                        this.$message.warning('请正确填写用户名及密码');
+                        return false;
+                    }
+                });
+            }
+
+        },
+    })
+</script>
+</body>
+</html>

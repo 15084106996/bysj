@@ -1,0 +1,16 @@
+POST http://localhost:8080/login
+adminname: Admin
+password: 123
+
+<> 2021-04-17T021459.200.txt
+
+###
+
+POST http://localhost:8080/login
+adminname: admin
+password: 123
+
+<> 2021-04-17T021433.200.txt
+
+###
+

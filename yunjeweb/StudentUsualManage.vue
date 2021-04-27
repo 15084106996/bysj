@@ -1,0 +1,173 @@
+<template>
+    <div>
+        <div class="studentUsualHeader">
+            <el-input  v-model="paramsObj.idOrName" placeholder="请输入课程编号或名称..." size="small" style="width: 350px"></el-input>
+            <el-button  @click="serchByIdOrName" size="small" icon="el-icon-search" type="primary">搜索</el-button>
+        </div>
+        <div>
+            <el-tag style="margin-bottom: 10px">学生在线时长</el-tag>
+
+            <el-table
+                    :data="studentUsualInfos"
+                    height="250"
+                    border
+                    style="width: 100%">
+                <el-table-column
+                        width="100"
+                        prop="cid"
+                        label="课程编号">
+                </el-table-column>
+                <el-table-column
+                        width="180"
+                        prop="cname"
+                        label="课程姓名">
+                </el-table-column>
+                <el-table-column
+                        width="100"
+                        prop="stid"
+                        label="学生学号">
+                </el-table-column>
+                <el-table-column
+                        width="100"
+                        prop="stname"
+                        label="学生姓名">
+                </el-table-column>
+                <el-table-column
+                        width="100"
+                        prop="score"
+                        label="学生得分">
+                </el-table-column>
+                <el-table-column
+                        width="100"
+                        prop="sumscore"
+                        label="总分">
+                </el-table-column>
+                <el-table-column label="操作" width="180" fixed="right">
+                    <template slot-scope="scope">
+                        <el-button
+                                size="mini"
+                                @click="handleDetails(scope.row)">详情</el-button>
+                        <el-button
+                                size="mini"
+                                type="success"
+                                @click="handleContrast(scope.row)">对比</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+            <el-pagination
+                    background
+                    @current-change="currentChange"
+                    :current-page="paramsObj.pageNum"
+                    :page-size="paramsObj.pageSize"
+                    layout="prev, pager, next"
+                    :total="total">
+            </el-pagination>
+        </div>
+        <el-dialog
+                title="详情"
+                :visible.sync="dialogVisibleDetails"
+                width="60%"
+            :before-close="handleClose">
+            <div>
+                <el-form model="Usual" label-width="80px">
+                    <el-form-item label="得分详情">
+                        <el-input type="textarea" v-model="Usual.details" readonly></el-input>
+                    </el-form-item>
+                </el-form>
+            </div>
+            <span slot="footer" class="dialog-footer">
+                <el-button size="mini" @click="dialogVisibleDetails = false">取 消</el-button>
+                <el-button size="mini" type="primary" @click="dialogVisibleDetails = false">确 定</el-button>
+            </span>
+        </el-dialog>
+        <el-dialog
+                title="对比"
+                :visible.sync="dialogVisibleContrast"
+                width="60%"
+                :before-close="handleClose">
+            <div>
+                <el-form model="Usual" label-width="80px">
+
+                    <el-form-item label="学生得分">
+                        <el-input v-model="Usual.score" readonly></el-input>
+                    </el-form-item>
+                    <el-form-item label="总分">
+                        <el-input v-model="Usual.sumscore" readonly></el-input>
+                    </el-form-item>
+                    <el-form-item label="平均分">
+                        <el-input v-model="Usual.avgscore" readonly></el-input>
+                    </el-form-item>
+                    <el-form-item label="教师意见">
+                        <el-input type="textarea" v-model="Usual.opinion" readonly></el-input>
+                    </el-form-item>
+                </el-form>
+            </div>
+            <span slot="footer" class="dialog-footer">
+                <el-button size="mini" @click="dialogVisibleContrast = false">取 消</el-button>
+                <el-button size="mini" type="primary" @click="dialogVisibleContrast = false">确 定</el-button>
+            </span>
+        </el-dialog>
+    </div>
+</template>
+<script>
+    module.exports= {
+        data(){
+            return {
+                dialogVisibleDetails : false,
+                dialogVisibleContrast : false,
+                Usual : {
+                    cid:'',
+                    cname:'',
+                    stid:'',
+                    score:'',
+                    sumscore:'',
+                    details:'',
+                    avgscore:'',
+                    opinion: ''
+                },
+                total : 0,
+                paramsObj:{
+                    pageNum : 0,
+                    pageSize : 1,
+                    idOrName : '',
+                    stid : JSON.parse(window.sessionStorage.getItem("loginStudent")).stid,
+                },
+                studentUsualInfos: [],//教师信息
+            }
+        },
+        methods:{
+            handleDetails(row){
+                Object.assign(this.Usual,row);
+                this.dialogVisibleDetails=true;
+            },
+            handleContrast(row){
+                Object.assign(this.Usual,row);
+              this.dialogVisibleContrast=true;
+            },
+            currentChange(count){//分页回调
+              this.paramsObj.pageNum=count;
+              this.initstudentUsualInfos();
+            },
+            serchByIdOrName() { // 点击搜索
+                this.paramsObj.pageNum = 1;
+                this.initstudentUsualInfos();
+            },
+            initstudentUsualInfos(){
+                getRequest('http://localhost:8080/searchStudentUsual',this.paramsObj).then(resp=>{
+                    if (resp.status==200) {
+                        this.studentUsualInfos=resp.data.data;
+                        this.total=resp.data.total;
+                    }
+                })
+            }
+        },
+        mounted(){
+            this.initstudentUsualInfos();
+        }
+    }
+</script>
+<style scoped>
+    .studentUsualHeader{
+        margin: 10px 0;
+    }
+</style>

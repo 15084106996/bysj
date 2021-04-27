@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c601060a-ae33-48c5-a505-357774b2f00c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rD1oN98yjrhF0KiidetGllx7CM" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yunjeweb" />
+      <recent name="D:\yunjeweb\api" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c601060a-ae33-48c5-a505-357774b2f00c" name="Default Changelist" comment="" />
+      <created>1618496019604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618496019604</updated>
+      <workItem from="1618496021196" duration="1297000" />
+      <workItem from="1618534993757" duration="192000" />
+      <workItem from="1618561422965" duration="3418000" />
+      <workItem from="1618638970478" duration="3324000" />
+      <workItem from="1618643796190" duration="492000" />
+      <workItem from="1618893106924" duration="1202000" />
+      <workItem from="1618900477443" duration="2654000" />
+      <workItem from="1618905267666" duration="1299000" />
+      <workItem from="1619059192132" duration="14764000" />
+      <workItem from="1619084760160" duration="5627000" />
+      <workItem from="1619160517949" duration="5446000" />
+      <workItem from="1619251132918" duration="9863000" />
+      <workItem from="1619339641589" duration="19037000" />
+      <workItem from="1619403673915" duration="647000" />
+      <workItem from="1619524753759" duration="605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
