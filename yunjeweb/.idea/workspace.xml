@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c601060a-ae33-48c5-a505-357774b2f00c" name="Default Changelist" comment="" />
+    <list default="true" id="c601060a-ae33-48c5-a505-357774b2f00c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../yunje/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/bean/Additional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/bean/Experiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/bean/Homework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/bean/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/bean/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentExperimentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentHomeworkServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentTestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentTopicServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/service/StudentExperimentServie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/service/StudentHomeworkServie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/service/StudentTestServie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yunje/src/service/StudentTopicServie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentExperimentManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/bean/OnlineTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/bean/OnlineTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/bean/PageInfoss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/bean/Usual.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/bean/Usual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/controller/student/SearchStudentTimeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/controller/student/SearchStudentTimeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/dao/StudentDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/dao/TeacherDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/dao/TeacherDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentLoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentLoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentTimeServie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentTimeServie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentUsualServie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/StudentUsualServie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/TeacherLoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/artifacts/yunje_war_exploded/WEB-INF/classes/service/TeacherLoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/bean/OnlineTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/bean/OnlineTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/bean/PageInfoss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/bean/Usual.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/bean/Usual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/controller/student/SearchStudentTimeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/controller/student/SearchStudentTimeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/dao/StudentDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/dao/TeacherDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/dao/TeacherDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentLoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentLoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentTimeServie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentTimeServie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentUsualServie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/service/StudentUsualServie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/out/production/yunje/service/TeacherLoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/out/production/yunje/service/TeacherLoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/bean/OnlineTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/bean/OnlineTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/bean/PageInfoss.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/bean/Usual.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/bean/Usual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentTimeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/controller/student/SearchStudentTimeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/dao/Student/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/dao/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/dao/Student/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/dao/Teacher/TeacherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/dao/TeacherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/dao/Teacher/TeacherDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/service/StudentLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/service/StudentLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/service/StudentTimeServie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/service/StudentTimeServie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/service/StudentUsualServie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/service/StudentUsualServie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yunje/src/service/TeacherLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../yunje/src/service/TeacherLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentHomeworkManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/StudentHomeworkManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/StudentIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentTimeManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/StudentTimeManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentUsualManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/StudentUsualManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherIndex.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +72,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1rD1oN98yjrhF0KiidetGllx7CM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/javaworkplace/java20_webpractice_front" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,10 +130,43 @@
       <workItem from="1619339641589" duration="19037000" />
       <workItem from="1619403673915" duration="647000" />
       <workItem from="1619524753759" duration="605000" />
+      <workItem from="1619598654409" duration="6522000" />
+      <workItem from="1619664240615" duration="3442000" />
+      <workItem from="1619676921227" duration="1149000" />
+      <workItem from="1619678461966" duration="261000" />
+      <workItem from="1619678905983" duration="9420000" />
+      <workItem from="1619860186577" duration="998000" />
+      <workItem from="1619868503079" duration="6436000" />
+      <workItem from="1620052426308" duration="1183000" />
+      <workItem from="1620115570424" duration="1499000" />
+      <workItem from="1620197889658" duration="733000" />
+      <workItem from="1620303856746" duration="1029000" />
+      <workItem from="1620304933289" duration="2326000" />
+      <workItem from="1620348590549" duration="1151000" />
+      <workItem from="1620441310631" duration="600000" />
+      <workItem from="1620551572614" duration="2599000" />
+      <workItem from="1620652215611" duration="592000" />
+      <workItem from="1620708971623" duration="2086000" />
+      <workItem from="1620714619161" duration="4225000" />
+      <workItem from="1620871867591" duration="1553000" />
+      <workItem from="1620878376641" duration="1776000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -5,7 +5,27 @@ public class OnlineTime {
     private String stname;
     private String logintime;
     private String logouttime;
-    private Long onlinetime;
+    private String onlinetime;
+    private String sumtime;
+    private String submissions;
+    private String sumsubmissions;
+
+    public String getSumtime() {
+        return sumtime;
+    }
+
+    public void setSumtime(String sumtime) {
+        this.sumtime = sumtime;
+    }
+
+    public String getSumsubmissions() {
+        return sumsubmissions;
+    }
+
+    public void setSumsubmissions(String sumsubmissions) {
+        this.sumsubmissions = sumsubmissions;
+    }
+
     public String getStid() {
         return stid;
     }
@@ -38,11 +58,19 @@ public class OnlineTime {
         this.logouttime = logouttime;
     }
 
-    public Long getOnlinetime() {
+    public String getOnlinetime() {
         return onlinetime;
     }
 
-    public void setOnlinetime(Long onlinetime) {
+    public void setOnlinetime(String onlinetime) {
         this.onlinetime = onlinetime;
+    }
+
+    public String getSubmissions() {
+        return submissions;
+    }
+
+    public void setSubmissions(String submissions) {
+        this.submissions = submissions;
     }
 }

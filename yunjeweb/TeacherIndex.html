@@ -66,8 +66,26 @@
                             <el-menu-item index="1-4">学生总成绩</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group>
-                            <template slot="title">学生在线时长分析</template>
-                            <el-menu-item index="2-1">学生在线时长分析</el-menu-item>
+                        <template slot="title">学生在线时长分析</template>
+                        <el-menu-item index="2-1">学生在线时长分析</el-menu-item>
+                    </el-menu-item-group>
+                        <el-menu-item-group>
+                            <template slot="title">学生分类</template>
+                            <el-menu-item index="3-1">学差生分类</el-menu-item>
+                            <el-menu-item index="3-2">其他学生分类</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                </el-menu>
+                        <el-menu>
+                        <el-submenu index="2">
+                            <template slot="title">
+                                <i class="el-icon-location"></i>
+                                <span>班级学习状态分析</span>
+                            </template>
+                        <el-menu-item-group>
+                            <template slot="title">班级学习状态分析</template>
+                            <el-menu-item index="4-1">班级在线时长分析</el-menu-item>
+                            <el-menu-item index="4-2">班级成绩分析分析</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                 </el-menu>

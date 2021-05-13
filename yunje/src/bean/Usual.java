@@ -5,35 +5,13 @@ public class Usual {
     private String cname;
     private String stid;
     private String stname;
-    private Long score;
-    private Long sumscore;
+    private String score;
+    private String sumscore;
+    private String classavgscore;
+    private String gradeavgscore;
+    private String classranking;
+    private String graderanking;
     private String details;
-    private Long avgscore;
-
-    public String getDetails() {
-        return details;
-    }
-
-    public void setDetails(String details) {
-        this.details = details;
-    }
-
-    public Long getAvgscore() {
-        return avgscore;
-    }
-
-    public void setAvgscore(Long avgscore) {
-        this.avgscore = avgscore;
-    }
-
-    public String getOpinion() {
-        return opinion;
-    }
-
-    public void setOpinion(String opinion) {
-        this.opinion = opinion;
-    }
-
     private String opinion;
 
     public String getCid() {
@@ -68,19 +46,67 @@ public class Usual {
         this.stname = stname;
     }
 
-    public Long getScore() {
+    public String getScore() {
         return score;
     }
 
-    public void setScore(Long score) {
+    public void setScore(String score) {
         this.score = score;
     }
 
-    public Long getSumscore() {
+    public String getSumscore() {
         return sumscore;
     }
 
-    public void setSumscore(Long sumscore) {
+    public void setSumscore(String sumscore) {
         this.sumscore = sumscore;
+    }
+
+    public String getClassavgscore() {
+        return classavgscore;
+    }
+
+    public void setClassavgscore(String classavgscore) {
+        this.classavgscore = classavgscore;
+    }
+
+    public String getGradeavgscore() {
+        return gradeavgscore;
+    }
+
+    public void setGradeavgscore(String gradeavgscore) {
+        this.gradeavgscore = gradeavgscore;
+    }
+
+    public String getClassranking() {
+        return classranking;
+    }
+
+    public void setClassranking(String classranking) {
+        this.classranking = classranking;
+    }
+
+    public String getGraderanking() {
+        return graderanking;
+    }
+
+    public void setGraderanking(String graderanking) {
+        this.graderanking = graderanking;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
+    public String getOpinion() {
+        return opinion;
+    }
+
+    public void setOpinion(String opinion) {
+        this.opinion = opinion;
     }
 }

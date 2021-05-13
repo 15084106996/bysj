@@ -1,6 +1,7 @@
-package dao;
+package dao.Teacher;
 
 import bean.Teacher;
+import dao.Teacher.TeacherDao;
 import utils.DBUtils;
 
 import java.sql.Connection;

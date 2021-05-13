@@ -1,4 +1,4 @@
-package dao;
+package dao.Teacher;
 
 import bean.Teacher;
 

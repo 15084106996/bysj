@@ -2,8 +2,8 @@ package service;
 
 import bean.RespBean;
 import bean.Student;
-import dao.StudentDao;
-import dao.StudentDaoImpl;
+import dao.Student.StudentDao;
+import dao.Student.StudentDaoImpl;
 
 public class StudentLoginService {
     StudentDao dao = new StudentDaoImpl();

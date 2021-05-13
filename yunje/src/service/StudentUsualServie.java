@@ -2,8 +2,8 @@ package service;
 
 import bean.PageInfos;
 import bean.Usual;
-import dao.StudentDao;
-import dao.StudentDaoImpl;
+import dao.Student.StudentDao;
+import dao.Student.StudentDaoImpl;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ public class StudentUsualServie {
             //查询一页的真实数据
         List<Usual> list=dao.findStudentUsual(idOrName==null?"":idOrName,stid,(Long.valueOf(pageNum)-1)*Long.valueOf(pageSize),pageSize);
             //查询总数
-        long counts=dao.getTotal(idOrName,stid);
-        PageInfos infos=new PageInfos();
-        infos.setTotal(counts);
-        infos.setData(list);
-        return infos;
+        long counts=dao.getUsualTotal(idOrName,stid);
+        PageInfos pageInfos=new PageInfos();
+        pageInfos.setTotal(counts);
+        pageInfos.setData(list);
+        return pageInfos;
     }
 }

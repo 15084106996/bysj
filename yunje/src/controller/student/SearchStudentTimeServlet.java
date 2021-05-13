@@ -1,10 +1,8 @@
 package controller.student;
 
-import bean.PageInfos;
-import bean.PageInfoss;
+import bean.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import service.StudentTimeServie;
-import service.StudentUsualServie;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @WebServlet(name = "SearchStudentTimeServlet" ,value = "/searchStudentTime")
 public class SearchStudentTimeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +25,7 @@ public class SearchStudentTimeServlet extends HttpServlet {
         String pageNum=request.getParameter("pageNum");
         String pageSize=request.getParameter("pageSize");
         StudentTimeServie servie=new StudentTimeServie();
-        PageInfoss pageInfoss=servie.findStudentTime(stid,pageNum,pageSize);
-        response.getWriter().println(new ObjectMapper().writeValueAsString(pageInfoss));
+        PageInfos pageInfos=servie.findStudentTime(stid,pageNum,pageSize);
+        response.getWriter().println(new ObjectMapper().writeValueAsString(pageInfos));
     }
 }

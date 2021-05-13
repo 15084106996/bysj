@@ -63,11 +63,12 @@
                             <el-menu-item index="1-1" @click="menuActive = 1">学生平时成绩</el-menu-item>
                             <el-menu-item index="1-2" @click="menuActive = 2">学生作业成绩</el-menu-item>
                             <el-menu-item index="1-3" @click="menuActive = 3">学生实验成绩</el-menu-item>
-                            <el-menu-item index="1-4" @click="menuActive = 4">学生总成绩</el-menu-item>
+                            <el-menu-item index="1-3" @click="menuActive = 4">学生考试成绩</el-menu-item>
+                            <el-menu-item index="1-4" @click="menuActive = 5">学生总成绩</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group>
                             <template slot="title">学生在线时长分析</template>
-                            <el-menu-item index="2-1" @click="menuActive=5">学生在线时长分析</el-menu-item>
+                            <el-menu-item index="2-1" @click="menuActive=6">学生在线时长分析</el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
                 </el-menu>
@@ -75,8 +76,9 @@
             <el-main>
                 <student-usual-manage v-if="menuActive== 1 "></student-usual-manage>
                 <student-homework-manage v-if="menuActive== 2 "></student-homework-manage>
-                <stud-manage v-if="menuActive== 3 "></stud-manage>
-                <student-time-manage v-if="menuActive== 5 "></student-time-manage>
+                <student-experiment-manage v-if="menuActive== 3 "></student-experiment-manage>
+                <student-test-manage v-if="menuActive==4"></student-test-manage>
+                <student-time-manage v-if="menuActive== 6 "></student-time-manage>
             </el-main>
         </el-container>
     </el-container>
@@ -131,7 +133,8 @@
             studentUsualManage : 'url:./StudentUsualManage.vue',
             studentHomeworkManage : 'url:./StudentHomeworkManage.vue',
             studentTimeManage : 'url:./StudentTimeManage.vue',
-            studManage : 'url:./StudManage.vue',
+            studentExperimentManage : 'url:./StudentExperimentManage.vue',
+            studentTestManage: 'url:./StudentTestManage.vue',
     }
     })
 </script>
