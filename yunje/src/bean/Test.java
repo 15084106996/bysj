@@ -11,6 +11,42 @@ public class Test {
     private String classranking;
     private String graderanking;
     private String ratio;
+    private String ttid;
+    private String cla;
+    private String classavgscore;
+    private String gradeavgscore;
+
+    public String getClassavgscore() {
+        return classavgscore;
+    }
+
+    public void setClassavgscore(String classavgscore) {
+        this.classavgscore = classavgscore;
+    }
+
+    public String getGradeavgscore() {
+        return gradeavgscore;
+    }
+
+    public void setGradeavgscore(String gradeavgscore) {
+        this.gradeavgscore = gradeavgscore;
+    }
+
+    public String getCla() {
+        return cla;
+    }
+
+    public void setCla(String cla) {
+        this.cla = cla;
+    }
+
+    public String getTtid() {
+        return ttid;
+    }
+
+    public void setTtid(String ttid) {
+        this.ttid = ttid;
+    }
 
     public String getClassranking() {
         return classranking;

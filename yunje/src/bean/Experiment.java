@@ -6,6 +6,7 @@ public class Experiment {
     private String stid;
     private String stname;
     private String score;
+    private String cla;
     private String sumscore;
     private String details;
     private String opinion;
@@ -14,8 +15,32 @@ public class Experiment {
     private String kind;
     private String classranking;
     private String graderanking;
-    private String submissions;
-    private String sumsubmissions;
+    private String classavgscore;
+    private String gradeavgscore;
+
+    public String getClassavgscore() {
+        return classavgscore;
+    }
+
+    public void setClassavgscore(String classavgscore) {
+        this.classavgscore = classavgscore;
+    }
+
+    public String getGradeavgscore() {
+        return gradeavgscore;
+    }
+
+    public void setGradeavgscore(String gradeavgscore) {
+        this.gradeavgscore = gradeavgscore;
+    }
+
+    public String getCla() {
+        return cla;
+    }
+
+    public void setCla(String cla) {
+        this.cla = cla;
+    }
 
     public String getCid() {
         return cid;
@@ -121,19 +146,4 @@ public class Experiment {
         this.graderanking = graderanking;
     }
 
-    public String getSubmissions() {
-        return submissions;
-    }
-
-    public void setSubmissions(String submissions) {
-        this.submissions = submissions;
-    }
-
-    public String getSumsubmissions() {
-        return sumsubmissions;
-    }
-
-    public void setSumsubmissions(String sumsubmissions) {
-        this.sumsubmissions = sumsubmissions;
-    }
 }

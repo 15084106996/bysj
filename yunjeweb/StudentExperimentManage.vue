@@ -1,12 +1,13 @@
 <template>
     <div>
         <div class="studentExperimentHeader">
-            <el-input  v-model="paramsObj.idOrName" placeholder="请输入课程编号或名称..." size="small" style="width: 350px"></el-input>
+            <el-input  v-model="paramsObj.cIdOrName" placeholder="请输入课程编号或名称..." size="small" style="width: 350px"></el-input>
             <el-button  @click="serchByIdOrName" size="small" icon="el-icon-search" type="primary">搜索</el-button>
         </div>
         <div>
         <el-tag style="margin-bottom: 10px">学生实验成绩</el-tag>
             <el-button  @click=handle1() size="small" type="primary">学生实验掌握程度</el-button>
+            <el-button @click=handle3() size="small" type="primary">学生实验掌握程度雷达图</el-button>
         <el-table
                 :data="studentExperimentInfos"
                 height="400"
@@ -49,19 +50,25 @@
             </el-table-column>
             <el-table-column
                     width="100"
+                    prop="classavgscore"
+                    label="班级平均">
+            </el-table-column>
+            <el-table-column
+                    width="100"
                     prop="classranking"
                     label="班级排名">
+            </el-table-column>
+            <el-table-column
+                    width="100"
+                    prop="gradeavgscore"
+                    label="年级平均">
             </el-table-column>
             <el-table-column
                     width="100"
                     prop="graderanking"
                     label="年级排名">
             </el-table-column>
-            <el-table-column
-                    width="100"
-                    prop="submissions"
-                    label="提交次数">
-            </el-table-column>
+
             <el-table-column label="操作" width="180" fixed="right">
                 <template slot-scope="scope">
                     <el-button
@@ -108,22 +115,22 @@
                 :visible.sync="dialogVisible1"
                 width="60%"
                 :before-close="handleClose">
-                <span class="studentExperiment">
+                <span >
                     实验一：
                 </span>
-            <el-progress :text-inside="true" :stroke-width="26" :percentage="70" status="success"></el-progress>
-            <span class="studentExperiment">
+            <el-progress class="studentExperiment"  :text-inside="true" :stroke-width="20" :percentage="73" status="exception"></el-progress>
+            <span >
                     实验二：
                 </span>
-            <el-progress :text-inside="true" :stroke-width="24" :percentage="90" status="success"></el-progress>
+            <el-progress class="studentExperiment" :text-inside="true" :stroke-width="20" :percentage="65" status="exception"></el-progress>
             <span class="studentExperiment">
                     实验三：
                 </span>
-            <el-progress :text-inside="true" :stroke-width="22" :percentage="60" status="exception"></el-progress>
-            <span class="studentExperiment">
+            <el-progress  class="studentExperiment" :text-inside="true" :stroke-width="20" :percentage="80" status="success"></el-progress>
+            <span >
                     实验四：
                 </span>
-            <el-progress :text-inside="true" :stroke-width="20" :percentage="80" status="success"></el-progress>
+            <el-progress  class="studentExperiment" :text-inside="true" :stroke-width="20" :percentage="90" status="success"></el-progress>
             <span slot="footer" class="dialog-footer">
                 <el-button size="mini" @click="dialogVisible1 = false">取 消</el-button>
                 <el-button size="mini" type="primary" @click="dialogVisible1 = false">确 定</el-button>
@@ -158,8 +165,8 @@
                 paramsObj:{
                     pageNum : 0,
                     pageSize : 8,
-                    idOrName : '',
-                    stid : JSON.parse(window.sessionStorage.getItem("loginStudent")).stid
+                    cIdOrName : '',
+                    stIdOrName : JSON.parse(window.sessionStorage.getItem("loginStudent")).stid
                 },
                 studentExperimentInfos: [],//教师信息
             }
@@ -172,6 +179,9 @@
             handle(row){
                 Object.assign(this.experiment,row);
                 this.dialogVisible=true;
+            },
+            handle3(){
+                window.location.href='./StudentExperiment.html'
             },
             handle1(){
                 this.dialogVisible1=true;
